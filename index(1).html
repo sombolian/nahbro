@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>מחשבון טריידים - עולם הכיף 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>מחשבון טריידים - עולם הכיף 🎉</h1>
+    <div class="trade-container">
+        <div class="trade-side" id="side1">
+            <h2>השחקן השני</h2>
+            <div class="grid"></div>
+            <input type="text" class="cash-input" placeholder="כסף">
+            <div class="total-value">שווי כולל: <span id="total1">0</span></div>
+            <div class="total-demand">ביקוש ממוצע:
+                <span id="demand1-stars" class="stars"></span>
+            </div>
+        </div>
+        <div class="profit-loss" id="profit-loss">רווח/הפסד</div>
+        <div class="trade-side" id="side2">
+            <h2>את/ה</h2>
+            <div class="grid"></div>
+            <input type="text" class="cash-input" placeholder="כסף">
+            <div class="total-value">שווי כולל: <span id="total2">0</span></div>
+            <div class="total-demand">ביקוש ממוצע:
+                <span id="demand2-stars" class="stars"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item Selection Modal -->
+    <div id="itemModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <input type="text" id="searchInput" placeholder="חיפוש פריט...">
+            <div id="itemList" class="item-list"></div>
+        </div>
+    </div>
+
+    <!-- Grade Selection Modal -->
+    <div id="gradeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>בחר דרגה</h3>
+            <div id="gradeList" class="grade-list"></div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
